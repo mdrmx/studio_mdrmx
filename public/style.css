@@ -1,0 +1,154 @@
+@font-face {
+  font-family: myFont;
+  src: url(../fonts/Andale_Mono.ttf);
+}
+
+html,
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+canvas {
+  display: block;
+}
+
+@media screen and (max-width: 2000px) {
+  #logo {
+    font-family: myFont;
+    padding-top: 3%;
+    background-color: rgb(240, 204, 20);
+    width: 100%;
+    min-width: 30%;
+    font-size: 50px;
+  }
+  #menu-bar {
+    display: flex;
+    column-gap: 1.5%;
+    justify-content: left;
+    padding-top: 2%;
+    width: 100%;
+    text-align: left;
+    padding: 1%;
+  }
+
+  .link {
+    color: white;
+    text-decoration: none;
+    font-family: myFont;
+    font-size: 20px;
+    text-align: left;
+  }
+  .link-select {
+    color: rgb(220, 100, 0);
+    text-decoration: none;
+    font-family: myFont;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .link:hover {
+    color: rgb(120, 200, 200);
+  }
+  /* P5 canvas */
+  #cnv {
+    z-index: 2;
+    height: 100%;
+    position: relative;
+  }
+
+  #bottom-bar {
+    background-color: black;
+    width: 40%;
+    position: relative;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 0.7%;
+  }
+  .icon {
+    height: 80%;
+    /* outline: auto; */
+  }
+  /* home page */
+  .content1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* outline: auto; */
+  }
+
+  /* works page */
+  .content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+  }
+
+  .heading {
+    font-family: myFont;
+    font-size: 5vw;
+    color: aliceblue;
+  }
+
+  .para {
+    font-family: myFont;
+    font-size: 3vw;
+    color: aliceblue;
+  }
+  #img {
+    width: 100%;
+  }
+
+  #description {
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+  }
+  /* about page */
+  .content3 {
+    position: absolute;
+    justify-content: center;
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    /* width: 100%; */
+  }
+  #selfie {
+    position: relative;
+    width: 100%;
+    /* outline: auto; */
+    /* outline-style: groove; */
+    max-height: 500px;
+    max-width: 500px;
+  }
+  .text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2%;
+    padding-right: 3%;
+    max-width: 500px;
+  }
+
+  .about-text {
+    background-color: rgb(240, 248, 255, 0.9);
+    font-family: myFont;
+    text-align: left;
+    font-size: 2.2vh;
+
+    outline: auto;
+    outline-style: groove;
+    padding: 1%;
+  }
+}
