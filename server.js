@@ -1,7 +1,7 @@
-import express from "express";
+const express = require("express");
 const app = express();
-import "dotenv/config";
-
+require("dotenv").config();
+    
 //set port to use either deploymnet environment port or local port 3000
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`listening at port: ${port}`));
